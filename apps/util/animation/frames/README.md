@@ -3,3 +3,5 @@ add here your frame by frame animation, every image in [jpg format](https://en.w
 the first frame need to be named 'frame-0', the second 'frame-1', and so on.
 
 I have included an example.
+
+#### DO NOT DELETE THIS FILE
