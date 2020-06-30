@@ -12,7 +12,7 @@ class Menu(UIPanel):
     def destroy(self):
         if self.child is not None:self.child.destroy();self.child = None
         self.kill()
-class os:
+class OS:
     SCREEN = None;DIMS = None;BG = None;MANAGER = None;BG_COLOR = (255, 128, 0);PAINT = False;PAINT_RADIUS = 10;PAINT_COLOR = 0;PAINT_COLOR_LIST = [(255, 255, 255),(192, 192, 192),(128, 128, 128),(0, 0, 0),(0, 255, 0),(0, 128, 0),(128, 128, 0),(0, 128, 128),(255, 0, 0),(128, 0, 0),(128, 0, 128),(255, 0, 255),(0, 0, 255),(0, 0, 128),(0, 255, 255),(255, 255, 0),];PAINT_SHAPE = 0;NUM_SHAPES = 3;FOCUS = None;APPS = {};APPMENU = None
     def __init__(self):apps_path = os.path.dirname(os.path.abspath(__file__)) + "/apps";SnakeWM.iter_dir(self.APPS, apps_path);pygame.init();pygame.display.set_caption('my os');os.putenv("SDL_FBDEV", "/dev/fb0");pygame.display.init();self.DIMS = (pygame.display.Info().current_w, pygame.display.Info().current_h);self.SCREEN = pygame.display.set_mode(self.DIMS, pygame.FULLSCREEN);self.BG = pygame.Surface((self.DIMS));self.BG.fill(self.BG_COLOR);self.BRUSH_SURF = pygame.Surface((self.DIMS), flags=pygame.SRCALPHA);self.BRUSH_SURF.fill((0, 0, 0, 0));self.MANAGER = pygame_gui.UIManager(self.DIMS);pygame.mouse.set_visible(True);pygame.display.update()
     def iter_dir(tree, path):
@@ -55,4 +55,4 @@ class os:
             if self.PAINT:self.SCREEN.blit(self.BG, (0, 0));self.SCREEN.blit(self.BRUSH_SURF, (0, 0));self.BRUSH_SURF.fill((0, 0, 0, 0))
             if not self.PAINT:self.SCREEN.blit(self.BG, (0, 0))
             self.MANAGER.draw_ui(self.SCREEN);pygame.display.update()
-os().run()
+OS().run()
