@@ -1,0 +1,11 @@
+pygame
+pyttsx3
+pywin32
+comtypes
+pygame-gui
+keyboard
+pyautogui
+js2py
+selenium
+chromedriver-autoinstaller
+html2text
