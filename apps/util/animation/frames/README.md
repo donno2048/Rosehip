@@ -1,4 +1,4 @@
-add here your frame by frame animation, every image in [png format](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
+add here your [frame by frame animation](https://en.wikipedia.org/wiki/Stop_motion), every image in [png format](https://en.wikipedia.org/wiki/Portable_Network_Graphics).
 
 the first frame need to be named 'frame-0', the second 'frame-1', and so on.
 
