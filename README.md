@@ -33,6 +33,7 @@ go to the directory where you installed it and open cmd, then run: `python os.py
 * ~~bat idle~~
 * ~~c# idle~~
 * ~~javascript idle~~
+* ~~visual basic idle~~
 * ~~connect 4~~
 * ~~chrome~~
 * ~~text based web-browser~~
