@@ -5,9 +5,9 @@ Released Operational System by Elisha Hollander Implemented Python
 
 download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
 ###### If you have python in your PATH:
-double click on second
+double click on a
 ###### Else:
-double click on first
+double click on b
 ## How to use it:
 double click on start
 
