@@ -9,7 +9,7 @@ double click on second
 ###### Else:
 double click on first
 ## How to use it:
-go to the directory where you installed it and open cmd, then run: `python os.py`
+double click on start
 
 ## What can you do with it:
 
