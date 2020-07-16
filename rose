@@ -5,7 +5,6 @@ comtypes
 pygame-gui
 keyboard
 wheel
-pyautogui
 Js2Py
 selenium
 chromedriver-autoinstaller
