@@ -3,15 +3,11 @@ Released Operational System by Elisha Hollander Implemented Python
 
 ## How to install:
 
-download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), then open cmd in the folder where you downloaded it, then:
+download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
 ###### If you have python in your PATH:
-```
-> pip install -r rose
-```
+double click on second
 ###### Else:
-```
-> first.bat
-```
+double click on first
 ## How to use it:
 go to the directory where you installed it and open cmd, then run: `python os.py`
 
