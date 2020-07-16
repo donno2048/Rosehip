@@ -4,8 +4,9 @@ pywin32
 comtypes
 pygame-gui
 keyboard
+wheel
 pyautogui
-js2py
+Js2Py
 selenium
 chromedriver-autoinstaller
 html2text
