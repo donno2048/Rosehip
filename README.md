@@ -11,7 +11,6 @@ download the project from the releases section or [go there directly](https://gi
 ###### Else:
 ```
 > first.bat
-> pip install -r rose
 ```
 ## How to use it:
 go to the directory where you installed it and open cmd, then run: `python os.py`
