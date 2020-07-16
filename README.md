@@ -1,6 +1,10 @@
 # Rosehip
 Released Operational System by Elisha Hollander Implemented Python
 
+```diff
+- this only works on windows
+```
+
 ## How to install:
 
 download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
@@ -21,23 +25,24 @@ double click on start
 
 
 ## To do:
-* ~~animations~~
-* ~~pong~~
-* ~~python idle~~
-* ~~html idle~~
-* ~~bat idle~~
-* ~~c# idle~~
-* ~~javascript idle~~
-* ~~visual basic idle~~
-* ~~powershell idle~~
-* ~~bash idle~~
-* ~~connect 4~~
-* ~~chrome~~
-* ~~text based web-browser~~
-* ~~music player~~
-* ~~calculator~~
-* ~~clock~~
-* ~~background color picker~~
-* ~~background image picker~~
-* camera
-* java support
+- [x] ~~animations~~
+- [x] ~~pong~~
+- [x] ~~python idle~~
+- [x] ~~html idle~~
+- [x] ~~bat idle~~
+- [x] ~~c# idle~~
+- [x] ~~javascript idle~~
+- [x] ~~visual basic idle~~
+- [x] ~~powershell idle~~
+- [x] ~~bash idle~~
+- [x] ~~connect 4~~
+- [x] ~~chrome~~
+- [x] ~~text based web-browser~~
+- [x] ~~music player~~
+- [x] ~~calculator~~
+- [x] ~~clock~~
+- [x] ~~background color picker~~
+- [x] ~~background image picker~~
+- [ ] camera
+- [ ] java support
+- [ ] cmd
