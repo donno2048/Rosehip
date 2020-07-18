@@ -46,3 +46,4 @@ double click on start
 - [ ] camera
 - [ ] java support
 - [ ] cmd
+- [ ] windows docker
