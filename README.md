@@ -47,3 +47,7 @@ double click on start
 - [ ] java support
 - [ ] cmd
 - [ ] windows docker
+
+## For developers:
+
+if you want to use it as an .iso you can run [another code I wrote](https://github.com/donno2048/CITUR) but it's currently having some issues, as specified is the README...
