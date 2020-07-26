@@ -25,27 +25,26 @@ double click on start
 
 
 ## To do:
-- [x] ~~animations~~
-- [x] ~~pong~~
-- [x] ~~[python](https://www.python.org/) idle~~
-- [x] ~~[html](https://en.wikipedia.org/wiki/HTML) idle~~
-- [x] ~~[bat](https://en.wikipedia.org/wiki/Batch_file) idle~~
-- [x] ~~[c#](https://docs.microsoft.com/en-us/dotnet/csharp/) idle~~
-- [x] ~~[javascript](https://www.javascript.com/) idle~~
-- [x] ~~[visual basic](https://docs.microsoft.com/en-us/dotnet/visual-basic/) idle~~
-- [x] ~~[powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7) idle~~
-- [x] ~~connect 4~~
-- [x] ~~chrome~~
-- [x] ~~text based web-browser~~
-- [x] ~~music player~~
-- [x] ~~calculator~~
-- [x] ~~clock~~
-- [x] ~~background color picker~~
-- [x] ~~background image picker~~
-- [ ] camera
-- [ ] java support
-- [ ] cmd
-- [ ] windows docker
+- [x] ~~[animations](https://en.wikipedia.org/wiki/Stop_motion)~~
+- [x] ~~[pong](https://en.wikipedia.org/wiki/Pong)~~
+- [x] ~~[python idle](https://www.python.org/)~~
+- [x] ~~[html idle](https://en.wikipedia.org/wiki/HTML)~~
+- [x] ~~[bat idle](https://en.wikipedia.org/wiki/Batch_file)~~
+- [x] ~~[c# idle](https://docs.microsoft.com/en-us/dotnet/csharp/)~~
+- [x] ~~[javascript idle](https://www.javascript.com/)~~
+- [x] ~~[visual basic idle](https://docs.microsoft.com/en-us/dotnet/visual-basic/)~~
+- [x] ~~[powershell idle](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7)~~
+- [x] ~~[chrome](https://en.wikipedia.org/wiki/Google_Chrome)~~
+- [x] ~~[text based web-browser](https://en.wikipedia.org/wiki/Text-based_web_browser)~~
+- [x] ~~[ogg music player](https://en.wikipedia.org/wiki/Ogg)~~
+- [x] ~~[calculator](https://en.wikipedia.org/wiki/Calculator)~~
+- [x] ~~[clock](https://en.wikipedia.org/wiki/Clock)~~
+- [x] ~~[background color picker](https://en.wikipedia.org/wiki/Wallpaper_(computing))~~
+- [x] ~~[background image picker](https://en.wikipedia.org/wiki/Wallpaper_(computing))~~
+- [ ] [camera](https://en.wikipedia.org/wiki/Camera)
+- [ ] [java support](https://en.wikipedia.org/wiki/Java_(programming_language))
+- [ ] [CLI](https://en.wikipedia.org/wiki/Command-line_interface)
+- [ ] [windows docker](https://github.com/docker/docker-ce)
 
 ## For developers:
 
