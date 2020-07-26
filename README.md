@@ -44,7 +44,6 @@ double click on start
 - [ ] [camera](https://en.wikipedia.org/wiki/Camera)
 - [ ] [java support](https://en.wikipedia.org/wiki/Java_(programming_language))
 - [ ] [CLI](https://en.wikipedia.org/wiki/Command-line_interface)
-- [ ] [windows docker](https://github.com/docker/docker-ce)
 
 ## For developers:
 
