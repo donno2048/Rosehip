@@ -27,14 +27,13 @@ double click on start
 ## To do:
 - [x] ~~animations~~
 - [x] ~~pong~~
-- [x] ~~python idle~~
-- [x] ~~html idle~~
-- [x] ~~bat idle~~
-- [x] ~~c# idle~~
-- [x] ~~javascript idle~~
-- [x] ~~visual basic idle~~
-- [x] ~~powershell idle~~
-- [x] ~~bash idle~~
+- [x] ~~[python](https://www.python.org/) idle~~
+- [x] ~~[html](https://en.wikipedia.org/wiki/HTML) idle~~
+- [x] ~~[bat](https://en.wikipedia.org/wiki/Batch_file) idle~~
+- [x] ~~[c#](https://docs.microsoft.com/en-us/dotnet/csharp/) idle~~
+- [x] ~~[javascript](https://www.javascript.com/) idle~~
+- [x] ~~[visual basic](https://docs.microsoft.com/en-us/dotnet/visual-basic/) idle~~
+- [x] ~~[powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7) idle~~
 - [x] ~~connect 4~~
 - [x] ~~chrome~~
 - [x] ~~text based web-browser~~
