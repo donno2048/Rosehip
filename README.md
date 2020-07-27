@@ -4,6 +4,7 @@ Released Operational System by Elisha Hollander Implemented Python
 ```diff
 - this only works on windows
 ```
+there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu.
 
 ## How to install:
 
@@ -47,4 +48,6 @@ double click on start
 
 ## For developers:
 
-if you want to use it as an .iso you can run [another code I wrote](https://github.com/donno2048/CITUR) but it's currently having some issues, as specified is the README...
+if you want to use it as an .iso you can run [another code I wrote](https://github.com/donno2048/CITUR) but it's currently having some issues, as specified is the [README](https://github.com/donno2048/CITUR/blob/master/README.md)...
+
+or you can either use the [.iso builder](https://github.com/donno2048/CITUR-L) for the [linux version](https://github.com/donno2048/Rosehip-L)
