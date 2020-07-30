@@ -43,6 +43,7 @@ double click on start
 - [x] ~~[background color picker](https://en.wikipedia.org/wiki/Wallpaper_(computing))~~
 - [x] ~~[background image picker](https://en.wikipedia.org/wiki/Wallpaper_(computing))~~
 - [x] ~~[camera](https://en.wikipedia.org/wiki/Camera)~~
+- [x] ~~[mp4 viewer](https://en.wikipedia.org/wiki/MPEG-4_Part_14)~~
 - [ ] [CLI](https://en.wikipedia.org/wiki/Command-line_interface)
 
 ## For developers:
