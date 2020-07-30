@@ -1,4 +1,4 @@
-import os,sys,time;import importlib;sys.dont_write_bytecode=True;os.environ['PYGAME_HIDE_SUPPORT_PROMPT']='1';import keyboard,pygame,pygame_gui;from pygame_gui.elements import UIPanel,UIButton;PANEL_LAYER = 10;BUTTON_DIMS = (200, 25);pygame.display.set_icon(pygame.image.load('image.jpg'))
+import os,sys,time,threading,keyboard,pygame,pygame_gui,importlib;sys.dont_write_bytecode=True;os.environ['PYGAME_HIDE_SUPPORT_PROMPT']='1';from pygame_gui.elements import UIPanel,UIButton;PANEL_LAYER = 10;BUTTON_DIMS = (200, 25);pygame.display.set_icon(pygame.image.load('image.jpg'))
 class Menu(UIPanel):
     manager = None;pos = None;path = None;child = None;elements = None
     def __init__(self, manager, pos, path, elements, loadfunc):super().__init__(pygame.Rect((pos[0] * BUTTON_DIMS[0], pos[1] * BUTTON_DIMS[1]),(BUTTON_DIMS[0] + 5, BUTTON_DIMS[1] * len(elements.keys()) + 5),),starting_layer_height=PANEL_LAYER,manager=manager,);self.pos = pos;self.path = path;self.elements = elements;self.loadfunc = loadfunc;ekeys = list(elements.keys());[UIButton(pygame.Rect((0, i * BUTTON_DIMS[1]), BUTTON_DIMS),text=ekeys[i],manager=manager,container=self,object_id="menu-" + self.path.replace(".", "-"),) for i in range(len(ekeys))]
@@ -55,4 +55,5 @@ class OS:
             if self.PAINT:self.SCREEN.blit(self.BG, (0, 0));self.SCREEN.blit(self.BRUSH_SURF, (0, 0));self.BRUSH_SURF.fill((0, 0, 0, 0))
             if not self.PAINT:self.SCREEN.blit(self.BG, (0, 0))
             self.MANAGER.draw_ui(self.SCREEN);pygame.display.update()
+if len(sys.argv)!=1:threading.Thread(target=lambda:[keyboard.send('alt+tab'),time.sleep(0.05),keyboard.send('alt+tab')]).start()
 OS().run()
