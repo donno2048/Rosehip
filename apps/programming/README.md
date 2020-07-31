@@ -6,11 +6,6 @@ since ENTER is used to execute the code use | to separate lines.
 
 # examples:
 
-## bash:
-```bash
-((sum=25+35))
-echo $sum
-```
 
 ## bat:
 
