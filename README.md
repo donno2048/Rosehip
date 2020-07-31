@@ -14,11 +14,17 @@ double click on a
 ###### Else:
 double click on b
 ## How to use it:
+###### If you're using a PC:
+
 double click on start
+
+###### If you're using a laptop:
+
+double click on laptop_start
 
 ## What can you do with it:
 
-* press HOME button to open the menu bar
+* press HOME button to open the menu bar or FN+LEFT_ARROW if you don't have any
 * press INSERT button to open the painter
   * scroll up and down to change the size of the brush
   * scroll up and down while holding ALT button to change the color of the brush
