@@ -52,6 +52,7 @@ double click on laptop_start
 - [x] ~~[mp4 viewer](https://en.wikipedia.org/wiki/MPEG-4_Part_14)~~
 - [x] ~~[maze](https://en.wikipedia.org/wiki/Maze)~~
 - [ ] [CLI](https://en.wikipedia.org/wiki/Command-line_interface)
+- [ ] [stable version of rosehip in pypi](https://pypi.org/project/rosehip/)
 
 ## For developers:
 
