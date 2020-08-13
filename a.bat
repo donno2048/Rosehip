@@ -1,1 +1,1 @@
-pip install -r rose
+pip install roin
