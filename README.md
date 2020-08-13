@@ -12,6 +12,8 @@ download the zip file named _exe.zip_ then extract it then just double click on 
 
 this is not recommended due to the unstable state of _Rosehip.exe_
 
+___note: you don't need python to run Rosehip.exe___
+
 ## How to install:
 
 download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
