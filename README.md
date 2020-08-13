@@ -6,21 +6,27 @@ Released Operational System by Elisha Hollander Implemented Python
 ```
 there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu.
 
+## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases):
+
+download the zip file named _exe.zip_ then extract it then just double click on _Rosehip.exe_
+
+this is not recommended due to the unstable state of _Rosehip.exe_
+
 ## How to install:
 
 download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
 ###### If you have python in your PATH:
-double click on a
+double click on _a_
 ###### Else:
-double click on b
+double click on _b_
 ## How to use it:
 ###### If you're using a PC:
 
-double click on start
+double click on _start_
 
 ###### If you're using a laptop:
 
-double click on laptop_start
+double click on _laptop_start_
 
 ## What can you do with it:
 
@@ -59,3 +65,11 @@ double click on laptop_start
 if you want to use it as an .iso you can run [another code I wrote](https://github.com/donno2048/CITUR) but it's currently having some issues, as specified is the [README](https://github.com/donno2048/CITUR/blob/master/README.md)...
 
 or you can either use the [.iso builder](https://github.com/donno2048/CITUR-L) for the [linux version of Rosehip](https://github.com/donno2048/Rosehip-L)
+
+## For extreme developers:
+
+if you want to create the .exe yourself you need to install [cx_Freeze](https://cx-freeze.readthedocs.io/en/latest/) version 6.1 using `pip install cx_Freeze==6.1` then change __every__ `os.path.realpath(__file__)` to `sys.executable` you might need to use `import sys` then in the directory of _os.py_ run:
+```python3
+from cx_Freeze import Executable,setup
+setup(name='Rosehip',options={'build_exe':{'packages':'requests,pygame,pygame_gui,pyttsx3,pywintypes,comtypes,keyboard,wheel,Js2Py,selenium,chromedriver_autoinstaller,html2text,cv2'.split(','),'include_files':['image.jpg',('musics','musics'),('images','images'),('apps','apps')]}},executables=[Executable('os.py',base='Win32GUI')])
+```
