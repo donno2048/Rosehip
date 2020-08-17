@@ -6,7 +6,7 @@ Released Operational System by Elisha Hollander Implemented Python
 ```
 there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu.
 
-## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases):
+## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases) (not recommended):
 
 download the zip file named _exe.zip_ then extract it then just double click on _Rosehip.exe_
 
@@ -14,7 +14,7 @@ this is not recommended due to the unstable state of _Rosehip.exe_
 
 ___note: you don't need python to run Rosehip.exe___
 
-## How to install the source version:
+## How to install the source version (recommended):
 
 download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
 ###### If you have python in your PATH:
