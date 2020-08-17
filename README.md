@@ -4,7 +4,7 @@ Released Operational System by Elisha Hollander Implemented Python
 ```diff
 - this only works on windows
 ```
-there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu.
+there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu debian and mint.
 
 ## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases) (not recommended):
 
