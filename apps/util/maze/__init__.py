@@ -1,4 +1,4 @@
-from random import randint;import pygame;from pygame_gui.elements.ui_window import UIWindow;from pygame_gui.elements.ui_image import UIImage;import os;from math import cos, sin, tan, pi, floor, ceil, sqrt;two_pi = pi * 2;half_pi = pi * 0.5;three_half_pi = pi * 1.5;NUMBER_OF_RAYS = 320
+from random import randint;import pygame,random;from pygame_gui.elements.ui_window import UIWindow;from pygame_gui.elements.ui_image import UIImage;import os;from math import cos, sin, tan, pi, floor, ceil, sqrt;two_pi = pi * 2;half_pi = pi * 0.5;three_half_pi = pi * 1.5;NUMBER_OF_RAYS = 320
 class DisjointSet:
 	class Element:
 		def __init__(self, key):self.key = key;self.parent = self;self.rank = 0
