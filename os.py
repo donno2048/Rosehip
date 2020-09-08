@@ -57,7 +57,7 @@ class OS:
             self.MANAGER.draw_ui(self.SCREEN);pygame.display.update()
 def switch():
     window = GetWindowText(GetForegroundWindow());keyboard.send('alt+tab')
-    while GetWindowText(GetForegroundWindow()) in [window,"Task Switching",""]:print(GetWindowText(GetForegroundWindow()))
+    while GetWindowText(GetForegroundWindow()) in [window,"Task Switching",""]:pass
     keyboard.send('alt+F4')
 if len(sys.argv)!=1:threading.Thread(target=switch).start()
 OS().run()
