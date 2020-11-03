@@ -5,7 +5,4 @@ class Video(pygame_gui.elements.UIWindow):
         super().update(delta)
         if not self.video.read()[0]:self.video=cv2.VideoCapture(os.path.dirname(os.path.abspath(__file__))+'\\video.mp4')
         else:self.dsurf.image.blit(pygame.surfarray.make_surface(numpy.rot90(cv2.cvtColor(cv2.cvtColor(self.video.read()[1],cv2.COLOR_RGB2BGR),cv2.COLOR_BGR2RGB))), (0, 0))
-def load(manager, params):
-    pos = (100, 100)
-    if params is not None and len(params) > 0:pos = params[0]
-    Video(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (100,100);Video(pos, manager)
