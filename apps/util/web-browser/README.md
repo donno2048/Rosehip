@@ -1,1 +1,3 @@
-just type your search or the adress you're looking for and press ENTER
+just type your search or adress and press ENTER
+
+addresses without http(/s) will be treated as searches
