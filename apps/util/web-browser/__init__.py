@@ -1,4 +1,26 @@
-from markdown2 import Markdown;import os;os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide";import html2text,pygame_gui,pygame,requests;from urllib.parse import urljoin
+from markdown2 import Markdown;import os;os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide";import html2text,pygame_gui,pygame,requests
+def urljoin(base, url, allow_fragments=True):
+    if not base:return url
+    if not url:return base
+    base, url, _coerce_result = _coerce_args(base, url);bscheme, bnetloc, bpath, bparams, bquery, bfragment = urlparse(base, '', allow_fragments);scheme, netloc, path, params, query, fragment = urlparse(url, bscheme, allow_fragments)
+    if scheme != bscheme or scheme not in uses_relative:return _coerce_result(url)
+    if scheme in uses_netloc and netloc:return _coerce_result(urlunparse((scheme, netloc, path,params, query, fragment)))
+    elif scheme in uses_netloc:netloc = bnetloc
+    if not path and not params:path = bpath;params = bparams
+    if not (path or params or query):query = bquery
+    if not (path or params):return _coerce_result(urlunparse((scheme, netloc, path,params, query, fragment)))
+    base_parts = bpath.split('/')
+    if base_parts[-1] != '':del base_parts[-1]
+    if path[:1] == '/':segments = path.split('/')
+    else:segments = base_parts + path.split('/');segments[1:-1] = filter(None, segments[1:-1])
+    resolved_path = []
+    for seg in segments:
+        if seg == '..':
+            try:resolved_path.pop()
+            except:pass
+        elif seg != '.':resolved_path.append(seg)
+    if segments[-1] in ('.', '..'):resolved_path.append('')
+    return _coerce_result(urlunparse((scheme, netloc, '/'.join(resolved_path) or '/', params, query, fragment)))
 class Webbrowser(pygame_gui.elements.UIWindow):
     def __init__(self, pos, manager):self.MOUSE_BUTTONS = {'SCROLL_WHEEL_UP': 4,'SCROLL_WHEEL_DOWN': 5,'BACK_BUTTON': 8,'FORWARD_BUTTON': 9};self.REPLACE_MAP_STRIPPED_HTML = {'-ROBRACKET-': '(','-RCBRACKET-': ')','-EOBRACKET-': '[','-ECBRACKTE-': ']','\t': '&nbsp;&nbsp;&nbsp;&nbsp;',"\n": '<br>',"<p>": '',"<\p>": "<br>","<ul>": "","</ul>": "","<li>": "* ","</li>": "<br>","<h1>": "<b>","</h1>": "</b>","<h2>": "<b>","</h2>": "</b>","<h>": "<b>","</h1>": "</b>","<blockquote>": "<i>","</blockquote>": "</i>"};self.REPLACE_MAP_FULL_HTML = {'(': '-ROBRACKET-',')': '-RCBRACKET-','[': '-EOBRACKET-',']': '-ECBRACKTE-'};super().__init__(pygame.Rect(pos, (600, 400)),manager,window_display_title="Webbrowser",object_id="#webbrowser",resizable=True,);self.current_base_url = str();self.x_position = 0;self.url_history_stack = [];self.url_history_stack_pointer = 0;self.is_newly_entered_url = False;self.page_cache = {};self.markdowner = Markdown();self.page_content = pygame_gui.elements.UITextBox("",relative_rect=pygame.Rect(0, 35, 568, 300),manager=manager,container=self,anchors={"left": "left","right": "right","top": "top","bottom": "bottom",},);self.input = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect(0, -337, 568, 30),manager=manager,container=self,anchors={"left": "left","right": "right","top": "bottom","bottom": "bottom",},);self.input.focus()
     def process_string_with_map(self, string, map):
