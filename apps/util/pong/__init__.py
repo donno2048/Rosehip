@@ -69,7 +69,4 @@ class PongWindow(UIWindow):
         if self.alive() and self.is_active:self.pong_game.update(time_delta)
         super().update(time_delta)
         self.pong_game.draw(self.game_surface_element.image)
-def load(manager, params):
-    pos = (50, 50)
-    if params is not None and len(params) > 0:pos = params[0]
-    PongWindow(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (50,50);PongWindow(pos, manager)
