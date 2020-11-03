@@ -4,7 +4,4 @@ class py(UIWindow):
     def process_event(self, event):
         super().process_event(event)
         if event.type == pygame.KEYUP and event.key == pygame.K_RETURN:os.chdir(os.path.dirname(os.path.abspath(__file__)));open('py.vbs','w').writelines(self.input.get_text().split('|'));self.text+='<br>'+os.popen('py.vbs').read().replace('\n','<br>');os.system('del py.vbs');self.input.kill();self.textbox.kill();self.textbox = pygame_gui.elements.UITextBox(self.text,relative_rect=pygame.Rect(0, 0, 368, 200),manager=self.manager,container=self,anchors={"left": "left","right": "right","top": "top","bottom": "bottom",},);self.input = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect(0, -35, 368, 30),manager=self.manager,container=self,anchors={"left": "left","right": "right","top": "bottom","bottom": "bottom",},);self.input.focus()
-def load(manager, params):
-    pos = (100, 100)
-    if params is not None and len(params) > 0:pos = params[0]
-    py(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (100,100);py(pos, manager)
