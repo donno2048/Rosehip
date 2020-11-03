@@ -4,7 +4,4 @@ class Speaker(pygame_gui.elements.UIWindow):
     def process_event(self, event):
         super().process_event(event)
         if event.type == pygame.USEREVENT and event.ui_element == self.input and event.user_type == pygame_gui.UI_TEXT_ENTRY_FINISHED and (self.speakthrd is None or not self.speakthrd.is_alive()) and self.input.get_text!="":self.engine.say(self.input.get_text);self.speakthrd = threading.Thread(target=self.engine.runAndWait, args=());self.speakthrd.start();self.label.set_text(self.input.get_text);self.input.set_text("")
-def load(manager, params):
-    pos = (100, 100)
-    if params is not None and len(params) > 0:pos = params[0]
-    Speaker(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (100,100);Speaker(pos, manager)
