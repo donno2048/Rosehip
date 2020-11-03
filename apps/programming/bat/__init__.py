@@ -4,4 +4,4 @@ class bat(UIWindow):
     def process_event(self, event):
         super().process_event(event)
         if event.type == pygame.KEYUP and event.key == pygame.K_RETURN:os.chdir(os.path.dirname(os.path.abspath(__file__)));open('py.bat','w').writelines(self.input.get_text().split('|'));self.text+='<br>'+os.popen('py.bat').read().replace('\n','<br>');os.system('del py.bat');self.input.kill();self.textbox.kill();self.textbox = pygame_gui.elements.UITextBox(self.text,relative_rect=pygame.Rect(0, 0, 368, 200),manager=self.manager,container=self,anchors={"left": "left","right": "right","top": "top","bottom": "bottom",},);self.input = pygame_gui.elements.UITextEntryLine(relative_rect=pygame.Rect(0, -35, 368, 30),manager=self.manager,container=self,anchors={"left": "left","right": "right","top": "bottom","bottom": "bottom",},);self.input.focus()
-def load(manager, params):pos = (100, 100);pos = params[0] if params is not None and len(params) > 0 else pos;bat(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (100, 100);bat(pos, manager)
