@@ -11,13 +11,9 @@ class SnakeAClock(pygame_gui.elements.UIWindow):
     def draw_dial(self):
         self.dial = pygame.Surface(self.DIMS);self.dial.fill(DARK);pygame.draw.circle(self.dial, WHITE, (self.DIMS[0] // 2, self.DIMS[1] // 2), self.clocksize());pygame.draw.circle(self.dial,GRAY,(self.DIMS[0] // 2, self.DIMS[1] // 2),int(0.99 * self.clocksize()),)
         for x in range(60):
-            if x % 5 == 0:continue
-            x1, y1 = (0.95 * self.clocksize() * sin(6 * x * pi / 180),0.95 * self.clocksize() * cos(6 * x * pi / 180),);x2, y2 = (0.92 * self.clocksize() * sin(6 * x * pi / 180),0.92 * self.clocksize() * cos(6 * x * pi / 180),);pygame.draw.line(self.dial,WHITE,(int(x1 + self.DIMS[0] // 2), int(y1 + self.DIMS[1] // 2)),(int(x2 + self.DIMS[0] // 2), int(y2 + self.DIMS[1] // 2)),2,)
+            if x % 5 != 0:x1, y1 = (0.95 * self.clocksize() * sin(6 * x * pi / 180),0.95 * self.clocksize() * cos(6 * x * pi / 180),);x2, y2 = (0.92 * self.clocksize() * sin(6 * x * pi / 180),0.92 * self.clocksize() * cos(6 * x * pi / 180),);pygame.draw.line(self.dial,WHITE,(int(x1 + self.DIMS[0] // 2), int(y1 + self.DIMS[1] // 2)),(int(x2 + self.DIMS[0] // 2), int(y2 + self.DIMS[1] // 2)),2,)
         for x in range(0, 360, 30):
             if x % 90 == 0:self.diam(x, 0.95, 0.88, 0.88, 2)
             else:self.diam(x, 0.95, 0.95, 0.87, 1)
     def draw_hands(self):now = datetime.datetime.now();x = 30 * ((now.hour - 12) % 12) + now.minute / 2;self.diam(x, 0.45, 0.08, -0.08, 30);x = 6 * now.minute + now.second / 10;self.diam(x, 0.75, 0.08, -0.08, 25);x = 6 * now.second;x1, y1 = (0.8 * self.clocksize() * sin(x * pi / 180),0.8 * self.clocksize() * cos(x * pi / 180),);x2, y2 = 0, 0;pygame.draw.line(self.dial,RED,(int(x1 + self.DIMS[0] // 2), int(-y1 + self.DIMS[1] // 2)),(int(x2 + self.DIMS[0] // 2), int(-y2 + self.DIMS[1] // 2)),3,)
-def load(manager, params):
-    pos = (100, 100)
-    if params is not None and len(params) > 0:pos = params[0]
-    SnakeAClock(pos, manager)
+def load(manager, params):pos = params[0] if params is not None and len(params) > 0 else (100,100);SnakeAClock(pos, manager)
