@@ -42,13 +42,7 @@ double click on _laptop_start_
 ## To do:
 - [x] ~~[animations](https://en.wikipedia.org/wiki/Stop_motion)~~
 - [x] ~~[pong](https://en.wikipedia.org/wiki/Pong)~~
-- [x] ~~[python idle](https://www.python.org/)~~
-- [x] ~~[html idle](https://en.wikipedia.org/wiki/HTML)~~
-- [x] ~~[bat idle](https://en.wikipedia.org/wiki/Batch_file)~~
-- [x] ~~[c# idle](https://docs.microsoft.com/en-us/dotnet/csharp/)~~
-- [x] ~~[javascript idle](https://www.javascript.com/)~~
-- [x] ~~[visual basic idle](https://docs.microsoft.com/en-us/dotnet/visual-basic/)~~
-- [x] ~~[powershell idle](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7)~~
+- [x] ~~variety of compilers ([python](https://www.python.org/), [html](https://en.wikipedia.org/wiki/HTML), [batch](https://en.wikipedia.org/wiki/Batch_file), [c#](https://docs.microsoft.com/en-us/dotnet/csharp/), [javascript](https://www.javascript.com/), [visual basic](https://docs.microsoft.com/en-us/dotnet/visual-basic/) and [powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7))~~
 - [x] ~~[chrome](https://en.wikipedia.org/wiki/Google_Chrome)~~
 - [x] ~~[text based web-browser](https://en.wikipedia.org/wiki/Text-based_web_browser)~~
 - [x] ~~[ogg music player](https://en.wikipedia.org/wiki/Ogg)~~
