@@ -4,7 +4,9 @@ Reliable Operating System by Elisha Hollander Implemented Python
 ```diff
 - this only works on windows
 ```
-there is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu debian and mint.
+There is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu debian and mint.
+
+There is also a [version for web](https://github.com/donno2048/Rosehip-repl), which is not recommended
 
 ## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases) (not recommended):
 
