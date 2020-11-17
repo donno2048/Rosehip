@@ -73,6 +73,5 @@ or you can either use the [.iso builder](https://github.com/donno2048/CITUR-L) f
 if you want to create the .exe yourself you need to install [cx_Freeze](https://cx-freeze.readthedocs.io/en/latest/) version 6.1 using `pip install cx_Freeze==6.1` then change __every__ `os.path.realpath(__file__)` to `sys.executable` you might need to use `import sys` then in the directory of _os.py_ run:
 ```python3
 from cx_Freeze import Executable,setup
-setup(name='Rosehip',options={'build_exe':{'packages':'requests,pygame,pygame_gui,pyttsx3,pywintypes,comtypes,keyboard,wheel,Js2Py,selenium,chromedriver_autoinstaller,html2text,cv2'.split(','),'include_files':['image.jpg',('musics','musics'),('images','images'),('apps','apps')]}},executables=[Executable('os.py',base='Win32GUI')])
+setup(name='Rosehip',options={'build_exe':{'packages':['roin'],'include_files':['image.jpg',('musics','musics'),('images','images'),('apps','apps')]}},executables=[Executable('os.py',base='Win32GUI')])
 ```
-<img width="0px" src="https://komarev.com/ghpvc/?username=antonkomarev">
