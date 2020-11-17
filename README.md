@@ -8,6 +8,9 @@ There is also a [version for linux](https://github.com/donno2048/Rosehip-L), mor
 
 There is also a [version for web](https://github.com/donno2048/Rosehip-repl), which is not recommended
 
+There is no version for Android but you can install [Pydroid](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) and download the source code, open _os.py_ in Pydroid, then by running in the Pydroid terminal `pip install roin` and pressing the play button on landscape mode you will enter Rosehip, from the programming apps only python, JavaScript and html are working on Android.
+
+
 ## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases) (not recommended):
 
 download the zip file named _exe.zip_ then extract it then just double click on _Rosehip.exe_
