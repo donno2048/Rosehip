@@ -8,8 +8,9 @@ There is also a [version for linux](https://github.com/donno2048/Rosehip-L), mor
 
 There is also a [version for web](https://github.com/donno2048/Rosehip-repl), which is not recommended
 
-There is no version for Android but you can install [Pydroid](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) and download the source code, open _os.py_ in Pydroid, then by running in the Pydroid terminal `pip install roin` and pressing the play button on landscape mode you will enter Rosehip, from the programming apps only python, JavaScript and html are working on Android.
+There is no version for Android but you can install [Pydroid](https://play.google.com/store/apps/details?id=ru.iiec.pydroid3) and download the source code, open _os.py_ in Pydroid, then by running in the Pydroid terminal `pip install pygame pyttsx3 pygame-gui Js2Py html2text markdown2` and pressing the play button on landscape mode you will enter Rosehip, from the programming apps only python, JavaScript and html are working on Android, and from the utilities only the Chrome app and the Camera app won't..
 
+Since Android is built on linux you should be using the linux version of Rosehip mentioned above
 
 ## You can run the .exe version from the [releases section](https://github.com/donno2048/Rosehip/releases) (not recommended):
 
