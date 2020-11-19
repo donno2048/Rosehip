@@ -6,6 +6,7 @@ Reliable Operating System by Elisha Hollander Implemented Python
 ```
 <br><details>
 <summary><b>Info about other platforms</b></summary><br>
+ 
 There is also a [version for linux](https://github.com/donno2048/Rosehip-L), more specifically for ubuntu debian and mint.
 
 There is also a [version for web](https://github.com/donno2048/Rosehip-repl), which is not recommended
