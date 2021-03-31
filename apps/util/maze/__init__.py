@@ -110,7 +110,7 @@ class Maze3D:
                 while x > 0 and x < len(self.map[0]) and self.map[floor(y + 0.1 * dir)][floor(x)] == 0:y += dir;x -= dir * arctanRayAngle
                 if x > 0 and x < len(self.map[0]):wallTypeV = self.map[floor(y + 0.1 * dir)][floor(x)];distV = sqrt((self.playerX - x) * (self.playerX - x) + (self.playerY - y) * (self.playerY - y));propV = x % 1 if dir == -1 else 1 - (x % 1)
             if distH < distV:dist = distH;prop = propH;wallImg = self.walllight[wallTypeH]
-            else:coeffLight = 1.0;dist = distV;prop = propV;wallImg = self.walldark[wallTypeV]
+            else:dist = distV;prop = propV;wallImg = self.walldark[wallTypeV]
             z = max(0.01, dist * cos((rayAngle - self.playerDir)));calculatedHeight = self.defaultHeight * (1 / z)
             if calculatedHeight > self.height:h = self.height;cropHeight = self.height / calculatedHeight * self.textureSize[1];offset = (self.textureSize[1] - cropHeight) / 2
             else:h = calculatedHeight;cropHeight = self.textureSize[1];offset = 0
