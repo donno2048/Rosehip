@@ -5,10 +5,10 @@ class Menu(UIPanel):
     def process_event(self, event):
         if event.type != pygame.USEREVENT:return
         if event.user_type == pygame_gui.UI_BUTTON_PRESSED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")):uitext = event.ui_element.text
-        if event.user_type == pygame_gui.UI_BUTTON_PRESSED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] == None:self.loadfunc(self.path + "." + uitext)
+        if event.user_type == pygame_gui.UI_BUTTON_PRESSED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] is None:self.loadfunc(self.path + "." + uitext)
         if event.user_type == pygame_gui.UI_BUTTON_ON_HOVERED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")):uitext = event.ui_element.text
-        if event.user_type == pygame_gui.UI_BUTTON_ON_HOVERED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] != None and self.child is not None:self.child.destroy()
-        if event.user_type == pygame_gui.UI_BUTTON_ON_HOVERED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] != None:self.child = Menu(self.ui_manager,(self.pos[0] + 1, list(self.elements.keys()).index(uitext)),self.path + "." + uitext,self.elements[uitext],self.loadfunc,)
+        if event.user_type == pygame_gui.UI_BUTTON_ON_HOVERED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] is not None and self.child is not None:self.child.destroy()
+        if event.user_type == pygame_gui.UI_BUTTON_ON_HOVERED and event.ui_object_id == ("panel.menu-" + self.path.replace(".", "-")) and self.elements[uitext] is not None:self.child = Menu(self.ui_manager,(self.pos[0] + 1, list(self.elements.keys()).index(uitext)),self.path + "." + uitext,self.elements[uitext],self.loadfunc,)
     def destroy(self):
         if self.child is not None:self.child.destroy();self.child = None
         self.kill()
