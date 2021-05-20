@@ -22,7 +22,7 @@ ___note: you don't need python to run Rosehip.exe___
 
 ## How to install the source version (recommended):
 
-Download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder then:
+Download the project from the releases section or [go there directly](https://github.com/donno2048/Rosehip/releases), extract the folder (or just `git clone`) then:
 ###### If you have python in your PATH:
 Double click on _a_
 ###### Else:
